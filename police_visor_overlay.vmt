@@ -1,0 +1,26 @@
+UnlitGeneric
+{
+	$basetexture					"models/ishi/halo/characters/marines/nmpd/police_helmet_overlay"
+	
+	$nocull 						"1"
+	$translucent 					"1"
+	$allowalphatocoverage 			"1"
+	$model 							"1"
+	
+	"Proxies" 
+	{
+		UniformNoise
+		{
+			resultVar	$alpha
+			minVal	0.65
+			maxVal	1
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" 0.1
+			"texturescrollangle" 0	
+		}
+	}
+
+}
